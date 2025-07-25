@@ -40,7 +40,8 @@ def predict():
 
         # Kirim hasil prediksi ke Thinger
         post_url = f"https://api.thinger.io/v3/users/{THINGER_USERNAME}/devices/{DEVICE_ID}/resources/predict_output"
-        post = requests.post(post_url, headers=headers, json=pred)
+        post = requests.post(post_url, headers=headers, json={"in": pred})
+
 
         if post.status_code == 200:
             return jsonify({"success": True, "prediksi": pred})
