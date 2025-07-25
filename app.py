@@ -9,7 +9,7 @@ app = Flask(__name__)
 # --- GANTI DENGAN PUNYAMU SENDIRI ---
 THINGER_USERNAME = 'Febrianope'
 DEVICE_ID = 'esp32bri'
-ACCESS_TOKEN = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...'  # include Bearer!
+ACCESS_TOKEN = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJoZWFsdGhfZGF0YSIsInN2ciI6ImFwLXNvdXRoZWFzdC5hd3MudGhpbmdlci5pbyIsInVzciI6IkZlYnJpYW5vcGUifQ.QUMBN9Q7RYXN3eXbhwOQcUrXgSV11Stkqb6nE366rmw'  # include Bearer!
 
 # Load sekali saja saat app start
 scaler = joblib.load("scaler.pkl")
